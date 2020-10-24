@@ -8,5 +8,8 @@ module.exports = {
             dialect: process.env.DIALECT || 'sqlite',
             storage: './nvHomerent-db.sqlite'
         },
+    },
+    authentication: {
+        jwtSecret: "test"
     }
 }

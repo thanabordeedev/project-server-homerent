@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
@@ -16,8 +15,24 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Kanit', sans-serif;
+  color: #2c2c2c;
+}
+
+body {
+ margin:0;
+ padding:0;
+ 
+}
+
+/* Fade transition */
+.fade-enter, .fade-leave-to {
+ opacity: 0;
+}
+.fade-enter-active, .fade-leave-active {
+ transition: opacity 0.5s;
+}
+.fade-enter-to {
+ opacity: 1;
 }
 </style>
